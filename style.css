@@ -1,3 +1,94 @@
-.navbar{
+.navbar, .footer{
     background-color: rgb(205, 177, 233);
 }
+
+.navbar-brand{
+    font-family: 'League Script';
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.nav-item{
+    font-family: 'League Script';
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+}
+
+/*--------------Banner--------------*/
+
+.container {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: none;
+    object-fit: cover;
+}
+
+.banner-image.active {
+    display: block;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+
+
+
+/*--------------Fonts--------------*/
+
+h1{
+    font-family: 'Cedarville Cursive';
+    font-size: 60px;
+    color: black;
+}
+
+p{
+    font-family: 'Cedarville Cursive';
+    font-size: 20px;
+    color: black;
+}
+/*--------------Fonts--------------*/
+@font-face {
+    font-family: 'Cedarville Cursive';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/cedarvillecursive/v17/yYL00g_a2veiudhUmxjo5VKkoqA-B_nuIrpw4cNOTw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+    font-family: 'League Script';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/leaguescript/v28/CSR54zpSlumSWj9CGVsoBZdeWNReuc4nG2o.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
