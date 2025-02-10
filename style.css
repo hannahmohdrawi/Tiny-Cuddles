@@ -1,78 +1,89 @@
-.navbar, .footer{
-    background-color: rgb(205, 177, 233);
-}
-
 .navbar-brand{
-    font-family: 'League Script';
-    font-weight: bold;
-    font-size: 50px;
-    margin-top: 10px;
+    font-family: 'Atma';
+    font-size: 2rem;
 }
 
-.nav-item{
-    font-family: 'League Script';
-    font-weight: bold;
-    font-size: 25px;
-    color: black;
+.shop-now-btn{
+    padding-bottom: 20px;
 }
 
-/*--------------Banner--------------*/
-
-.container {
-    max-width: 100%;
-    overflow: hidden;
-    position: relative;
+.about-section{
+    background-color: rgb(167, 226, 250);
 }
 
-.banner-slider {
-    position: relative;
-    width: 100%;
-    height: auto;
+.navbar{
+    background-color: rgb(167, 226, 250);
 }
 
-.banner-image {
-    width: 100%;
-    height: auto;
-    display: none;
-    object-fit: cover;
+
+.footer{
+    background-color: rgb(167, 226, 250);
+    height: 25px;
 }
 
-.banner-image.active {
-    display: block;
-}
 
-.prev-btn, .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.cart-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff6600;
     color: white;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
-    font-size: 24px;
-    z-index: 10;
+    border-radius: 5px;
+}
+.cart-popup {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+}
+.cart-popup.open {
+    right: 0;
+}
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+.cart-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
 }
 
-.prev-btn { left: 10px; }
-.next-btn { right: 10px; }
-
-
-
-
-/*--------------Fonts--------------*/
-
-h1{
-    font-family: 'Cedarville Cursive';
-    font-size: 60px;
-    color: black;
+.cart-total {
+    font-weight: bold;
+    margin-top: 10px;
 }
-
-p{
-    font-family: 'Cedarville Cursive';
+.close-cart {
+    cursor: pointer;
+    background: none;
+    border: none;
     font-size: 20px;
-    color: black;
 }
+
+
+
+
 /*--------------Fonts--------------*/
 @font-face {
     font-family: 'Cedarville Cursive';
@@ -91,4 +102,14 @@ p{
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/leaguescript/v28/CSR54zpSlumSWj9CGVsoBZdeWNReuc4nG2o.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
+}
+
+/* latin */
+@font-face {
+    font-family: 'Atma';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/atma/v16/uK_z4rqWc-Eoo8JzGjA3P9WeVkI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
