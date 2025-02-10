@@ -6,7 +6,7 @@
     <title>Tiny Cuddles</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -19,14 +19,24 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Sign In/index.html">Sign In</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    <li class="nav-item"><i class="fa-solid fa-cart-shopping"></i></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-house"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="Sign In/index.html"><i class="fa-solid fa-address-card"></i></a></li>
+                    <li class="nav-item contact"><a class="nav-link" href="#"><i class="fa-solid fa-phone"></i></a></li>
+                    <li class="nav-item shopping-cart"><a class="nav-link" href="#" onclick="toggleCart()"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!--Cart Popup-->
+    <div class="cart-popup" id="cartPopup">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" onclick="toggleCart()">&times;</button>
+        </div>
+        <p>Your cart is empty.</p>
+    </div>
     
     <!-- Hero Section with Carousel -->
     <header class="hero-section">
@@ -49,8 +59,8 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="text-center mt-3">
-            <a href="#products" class="btn btn-dark btn-lg">Shop Now</a>
+        <div class="shop-now-btn text-center mt-3">
+            <a href="#products" class="btn btn-info text-white">Shop Now</a>
         </div>
     </header>
 
@@ -74,7 +84,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Lord Daper Ted III</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -84,7 +94,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Shelly Von Sheldon</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -94,7 +104,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Toasty the Stuffin’ Muffin</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -104,7 +114,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Tiberius</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-info">Add to Cart</a>
+                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -114,7 +124,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Moby the Blubby Bear</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-info">Add to Cart</a>
+                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -124,7 +134,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Gus the Bearagus</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-info">Add to Cart</a>
+                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -134,7 +144,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Weldon The Patch</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-info">Add to Cart</a>
+                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -144,7 +154,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Countington the Bear Ledger</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-info">Add to Cart</a>
+                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -154,7 +164,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Dunga-reezy</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-info">Add to Cart</a>
+                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -167,5 +177,6 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
