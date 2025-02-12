@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
 </head>
 <body>
     <!-- Navbar -->
@@ -36,6 +38,8 @@
             <button class="close-cart" onclick="toggleCart()">&times;</button>
         </div>
         <p>Your cart is empty.</p>
+        <ul class="cart-items" id="cartItems"></ul>
+        <p class="cart-total">Total: £<span id="cartTotal">0.00</span></p>
     </div>
     
     <!-- Hero Section with Carousel -->
@@ -68,9 +72,8 @@
     <!-- About Us Section -->
     <section class="about-section">
         <div class="container">
-            <h2>About Us</h2>
             <h2>Welcome to Tiny Cuddles</h2>
-            <p>Find the best stuffed animals at unbeatable prices</p>
+            <p>Find the best stuffed animals at unbeatable prices!</p>
             <p>Tiny Cuddles is dedicated to bringing joy and comfort to all ages through high-quality stuffed animals. Our products are crafted with care and love to ensure the best cuddling experience.</p>
         </div>
     </section>
@@ -84,7 +87,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Lord Daper Ted III</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
+                        <button href="#" class="btn btn-info text-white" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -94,7 +97,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Shelly Von Sheldon</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
+                        <button href="#" class="btn btn-info text-white" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -104,7 +107,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Toasty the Stuffin’ Muffin</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
+                        <button href="#" class="btn btn-info text-white" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -114,7 +117,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Tiberius</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
+                        <button href="#" class="btn btn-info text-white" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -124,7 +127,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Moby the Blubby Bear</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
+                        <button href="#" class="btn btn-info text-white" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -134,7 +137,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Gus the Bearagus</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
+                        <button href="#" class="btn btn-info text-white" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -144,7 +147,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Weldon The Patch</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
+                        <button href="#" class="btn btn-info text-white" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -154,7 +157,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Countington the Bear Ledger</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
+                        <button href="#" class="btn btn-info text-white" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -164,7 +167,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Dunga-reezy</h5>
                         <p class="card-text">£19.99</p>
-                        <a href="#" class="btn btn-info text-white">Add to Cart</a>
+                        <button href="#" class="btn btn-info text-white" onclick="addToCart()">Add to Cart</button>
                     </div>
                 </div>
             </div>
